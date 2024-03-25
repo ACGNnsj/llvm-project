@@ -1,7 +1,11 @@
 # See docs/CMake.html for instructions about how to build LLVM with CMake.
 
 cmake_minimum_required(VERSION 3.20.0)
-
+add_compile_options(/utf-8)
+set(SWIG_DIR "C:/Program Files (x86)/swig")
+set(SWIG_EXECUTABLE "C:/Program Files (x86)/swig/bin/swig.exe")
+set(LUA_LIBRARIES "C:/Users/ootop/AppData/Local/Programs/Lua/lib/lua54.lib")
+set(LUA_INCLUDE_DIR "C:/Users/ootop/AppData/Local/Programs/Lua/include")
 set(LLVM_COMMON_CMAKE_UTILS ${CMAKE_CURRENT_SOURCE_DIR}/../cmake)
 include(${LLVM_COMMON_CMAKE_UTILS}/Modules/CMakePolicy.cmake
   NO_POLICY_SCOPE)
